@@ -1,0 +1,33 @@
+# Journal du serveur d'application — 6 octobre 2026
+2026-10-06 08:00:01 [INFO] serveur: démarrage du service sur le port 8080
+2026-10-06 08:00:02 [DEBUG] config: lecture de config.toml
+2026-10-06 08:00:02 [INFO] bdd: connexion à la base établie
+2026-10-06 08:15:43 [INFO] auth: connexion de l'utilisateur alice
+2026-10-06 08:16:10 [WARN] auth: mot de passe invalide pour bob
+2026-10-06 08:16:25 [WARN] auth: mot de passe invalide pour bob
+2026-10-06 08:16:40 [ERROR] auth: compte bob bloqué après 3 échecs
+2026-10-06 08:30:00 [DEBUG] cache: 128 entrées en mémoire
+2026-10-06 09:02:17 [INFO] api: GET /produits 200 (12 ms)
+2026-10-06 09:02:18 [INFO] api: GET /produits/42 200 (8 ms)
+2026-10-06 09:05:51 [WARN] api: GET /commandes 200 lent (1840 ms)
+2026-10-06 09:07:03 [ERROR] bdd: délai dépassé sur la requête des commandes
+2026-10-06 09:07:04 [INFO] bdd: nouvelle tentative de connexion
+2026-10-06 09:07:05 [INFO] bdd: connexion à la base rétablie
+
+2026-10-06 09:20:12 [INFO] auth: connexion de l'utilisateur carole
+2026-10-06 09:45:00 [DEBUG] cache: purge de 40 entrées expirées
+06/10/2026 10:00:00 [INFO] api: format de date incorrect
+2026-10-06 10:12:33 [ERROR] api: POST /paiement 500 erreur interne
+2026-10-06 10:12:34 [INFO] notification: courriel envoyé à l'équipe support
+2026-10-06 10:30:00 [CRITICAL] disque: espace disque faible
+2026-10-06 11:00:00 [INFO] api GET /sante 200
+2026-10-06 11:15:09 [WARN] disque: 85 % de l'espace utilisé
+2026-10-06 11:40:27 [INFO] auth: déconnexion de l'utilisateur alice
+2026-10-06 12:01:44 [ERROR] notification: serveur de courriel injoignable
+2026-10-06 12:01:45 [WARN] notification: nouvel essai dans 60 s
+2026-10-06 12:02:45 [INFO] notification: courriel envoyé à l'équipe support
+2026-10-06 13:30:00 [INFO] api: GET /produits 200 (10 ms)
+ligne totalement inattendue
+2026-10-06 14:22:08 [ERROR] bdd: verrou mortel détecté, transaction annulée
+2026-10-06 14:22:09 [INFO] bdd: transaction rejouée avec succès
+2026-10-06 18:00:00 [INFO] serveur: arrêt programmé du service
